@@ -1,76 +1,157 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello World Personal Page</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creaciones Jetly</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400' rel='stylesheet' type='text/css'>
+    header {
+      background-color: #8e44ad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <!-- Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    nav {
+      background-color: #f3f3f3;
+      text-align: center;
+      padding: 10px;
+    }
 
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #8e44ad;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp img {
+      width: 35px;
+      height: 35px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: #8e44ad;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .precios ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .precios li {
+      background: #eee;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+<body>
 
-<!-- Remove the background class for a vanilla theme -->
-<body class="background">
+<header>
+  <h1>Creaciones Jetly</h1>
+  <p>Confección de prendas y accesorios personalizados</p>
+</header>
 
-<div class="container">
+<nav>
+  <a href="#galeria">Galería</a>
+  <a href="#precios">Precios</a>
+  <a href="#cotizar">Cotizar</a>
+</nav>
 
-	<header>
-		<!-- Add the URL to you avatar or add a local image -->
-		<img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/aio___/128.jpg" alt="My Avatar" />
-		<p>Hello World, I'm</p>
-		<h1>Your Name</h1>
-	</header>
-	
-	<!-- Let the world know about you -->
-	<div class="about">
-		<p>An introductory paragraph about who you are and what you do.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non quaerat voluptatem.</p>
-	</div>
-	
-	<!-- Icons from http://whanncons.com. Delete or comment out what you don't need -->
-	<div class="social">
-		<ul>
-			<li><a href="#"><img src="images/social-icons/behance.svg" alt="View my Behance Portfolio" /></a></li>
-			<li><a href="#"><img src="images/social-icons/dribbble.svg" alt="Follow me on Dribbble" /></a></li>
-			<li><a href="mailto:#"><img src="images/social-icons/email.svg" alt="Send me an email" /></a></li>
-			<li><a href="#"><img src="images/social-icons/facebook.svg" alt="Friend me on Facebook" /></a></li>
-			<li><a href="#"><img src="images/social-icons/flickr.svg" alt="Follow me on Flickr" /></a></li>
-			<li><a href="#"><img src="images/social-icons/github.svg" alt="Follow me on GitHub" /></a></li>
-			<!-- <li><a href="#"><img src="images/social-icons/googleplus.svg" alt="Follow me on Google+" /></a></li>
-			<li><a href="#"><img src="images/social-icons/instagram.svg" alt="Follow me on Instagram" /></a></li>
-			<li><a href="#"><img src="images/social-icons/link.svg" alt="View my website" /></a></li>
-			<li><a href="#"><img src="images/social-icons/linkedin.svg" alt="Follow me on LinkedIn" /></a></li>
-			<li><a href="#"><img src="images/social-icons/myspace.svg" alt="Follow me on Myspace" /></a></li>
-			<li><a href="#"><img src="images/social-icons/pinterest.svg" alt="Follow me on Pinterest" /></a></li>
-			<li><a href="#"><img src="images/social-icons/rss.svg" alt="View my RSS feed" /></a></li>
-			<li><a href="#"><img src="images/social-icons/skype.svg" alt="Follow me on Skype" /></a></li>
-			<li><a href="#"><img src="images/social-icons/soundcloud.svg" alt="Listen to my music on Soundcloud" /></a></li>
-			<li><a href="#"><img src="images/social-icons/spotify.svg" alt="Follow me on Spotify" /></a></li>
-			<li><a href="#"><img src="images/social-icons/tumblr.svg" alt="Follow me on Tumblr" /></a></li>
-			<li><a href="#"><img src="images/social-icons/twitter.svg" alt="Follow me on Twitter" /></a></li>
-			<li><a href="#"><img src="images/social-icons/vimeo.svg" alt="Subscribe to my channel on Vimeo" /></a></li>
-			<li><a href="#"><img src="images/social-icons/vine.svg" alt="Follow me on Vine" /></a></li>
-			<li><a href="#"><img src="images/social-icons/wordpress.svg" alt="Follow me on Wordpress" /></a></li>
-			<li><a href="#"><img src="images/social-icons/yahoo.svg" alt="Follow me on Yahoo" /></a></li>
-			<li><a href="#"><img src="images/social-icons/youtube.svg" alt="View my YouTube channel" /></a></li> -->
-		</ul>
-	</div>
-	
-	<!-- This is totally free to use and I'd appreciate you keep this link back to the repo, but feel free to remove it should you prefer -->
-	<footer>
-		<p><a href="https://github.com/timpotter/hello-world-page">Hello World Personal Page</a> by <a href="http://timpotter.github.io/">Tim Potter</a></p>
-	</footer>
+<section id="galeria">
+  <h2>Galería de Productos</h2>
+  <div class="galeria">
+    <img src="https://via.placeholder.com/200x250?text=Producto+1" alt="Producto 1">
+    <img src="https://via.placeholder.com/200x250?text=Producto+2" alt="Producto 2">
+    <img src="https://via.placeholder.com/200x250?text=Producto+3" alt="Producto 3">
+  </div>
+</section>
 
-</div>
-    
+<section id="precios" class="precios">
+  <h2>Precios Estimados</h2>
+  <ul>
+    <li>Blusa personalizada: $25</li>
+    <li>Falda típica: $40</li>
+    <li>Traje completo: $90</li>
+  </ul>
+</section>
+
+<section id="cotizar">
+  <h2>Solicita tu Cotización</h2>
+  <form onsubmit="enviarCotizacion(); return false;">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea placeholder="¿Qué deseas cotizar?" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<a class="whatsapp" href="https://wa.me/573001112233" target="_blank" title="Escríbenos por WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<script>
+  function enviarCotizacion() {
+    alert("Gracias por tu solicitud. Te responderemos pronto por correo.");
+  }
+</script>
+
 </body>
 </html>
